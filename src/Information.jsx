@@ -32,10 +32,23 @@ export const HikingWeatherInfo = (props) =>{
              style={{
               color: tempGoodForHiking === "Comfortable" ? "green" : "red"
              }}
-            </p>
-            <p>
               Currently the temperature over in {props.city} is {props.currentTemp}°F. 
               However, it feels like {props.tempGoodForHiking}. Those conditions are pretty {tempGoodForHiking} for hiking!
+            </p>
+            <p>
+              Currently there is a {props.precip}% chance of rain in {props.city}.
+              However within the next hour there will be a {props.precipNext}% chance of rain.
+            </p>
+            <p>
+            style={{
+              color: rightPrecp ? "green" : "red"
+             }}
+            </p>
+            <p>
+            style={{
+              color: rightHumidity ? "green" : "red"
+             }}
+             Humidity at {props.city} is {props.humidity}
             </p>
         </React.Fragment>
     )
