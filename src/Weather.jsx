@@ -87,8 +87,9 @@ const Weather = () => {
             <Form>
                 <Form.Control
                     type="text"
+                    className="text-center"
                     style={{ cursor: "text" }}
-                    placeholder="Please enter a location name or area code"
+                    placeholder="Please enter a location name or area code and we can find out if the weather is appropriate for hiking"
                     onChange={(e) => {
                         setArea(e.target.value);
                     }}
