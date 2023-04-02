@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import config from "./config";
+import config from "./data/config";
 import { Info } from "./Info";
 import axios from "axios";
 import {Form} from "react-bootstrap";
