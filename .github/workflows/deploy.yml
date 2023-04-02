@@ -2,7 +2,7 @@ name: Node.js CI
 
 on:
     push:
-        branches: [main]
+        branches: [master]
 
 jobs:
     build:
@@ -32,8 +32,8 @@ jobs:
                   value: ${{ steps.get-repo-values.outputs.url }}
             - run: npm ci
             - run: npm run lint
-- run: echo "<html><head><meta http-equiv='refresh' content='0; URL=${{github.server_url}}/${{github.repository}}' /></head><body>Redirecting to repository</body></html>" > ./public/github.html
-            
+            - run: echo "<html><head><meta http-equiv='refresh' content='0; URL=${{github.server_url}}/${{github.repository}}' /></head><body>Redirecting to repository</body></html>" > ./public/github.html
+           
 
             - name: Deploy
               run: |
