@@ -25,7 +25,7 @@ https://github.com/sbrugel/biking-weather/blob/master/src/Info.jsx
     <li>
         Take the config-template.js file from the data folder, rename it to config.js and insert the weather api key here
     </li>
-    <li>Run **npm i** which updates all dependencies</li>
+    <li>Run npm  which updates all dependencies</li>
     <li>Npm run start should launch on localhost 👍</li>
 </ul>
 
